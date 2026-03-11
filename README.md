@@ -1,11 +1,24 @@
-<div align="center">
+# Polash World
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+A 3D side-scrolling platformer with floating islands, tunnels, and interactive POIs.
 
-  <h1>Built with AI Studio</h2>
+## Directory Structure
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+- `src/components/Core`: Basic UI elements.
+- `src/components/Game`: Game-specific components (World, Player, Island, etc.).
+- `src/game`: Game logic, config, and systems (Physics, Input, Store).
+- `src/materials`: Custom shaders/materials.
+- `src/assets`: Static assets.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Key Features
 
-</div>
+- **Config-Driven Levels**: Levels are defined in `src/game/LevelConfig.tsx`.
+- **Custom Physics**: Simple AABB collision detection in `src/game/Physics.tsx`.
+- **Reactive State**: Zustand store for game state.
+- **Framer Motion**: UI animations.
+- **Three.js**: 3D rendering via React Three Fiber.
+
+## Controls
+
+- **WASD / Arrow Keys**: Move and Jump.
+- **E / Enter**: Interact with POIs.
